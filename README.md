@@ -5,6 +5,7 @@ Computer Graphics with WebGL
 ### Models
 
 -   `Triangle`, an experimental model based on simplified `WebGL Fundamentals` tutorial.
+-   `Color Buffer Varying Triangle`, a rectangle made of pair of triangles based on `WebGL How It Works` tutorial.
 
 ### Guide
 
