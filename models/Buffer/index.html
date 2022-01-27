@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Buffer-Varying Triangle</title>
+    </head>
+    <body>
+        <div>
+            <div class="container">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div id="ui">
+                <div id="x" class="setting"></div>
+                <div id="y" class="setting"></div>
+                <div id="angle" class="setting"></div>
+                <div id="scale-x" class="setting"></div>
+                <div id="scale-y" class="setting"></div>
+            </div>
+        </div>
+        <!-- vertex shader -->
+        <script id="vertex-shader" type="x-shader/x-vertex">
+            attribute vec2 position;
+            attribute vec4 color;
+
+            uniform mat3 u_matrix;
+
+            varying vec4 v_color;
+
+            void main() {
+              // Multiply the position by the matrix.
+              gl_Position = vec4((u_matrix * vec3(position, 1)).xy, 0, 1);
+
+              // Copy the color from the attribute to the varying.
+              v_color = color;
+            }
+        </script>
+        <!-- fragment shader -->
+        <script id="fragment-shader" type="x-shader/x-fragment">
+            precision mediump float;
+
+            varying vec4 v_color;
+
+            void main() {
+              gl_FragColor = v_color;
+            }
+        </script>
+        <script src="https://webglfundamentals.org/webgl/resources/webgl-utils.js"></script>
+        <script src="https://webglfundamentals.org/webgl/resources/webgl-lessons-ui.js"></script>
+        <script src="https://webglfundamentals.org/webgl/resources/m3.js"></script>
+        <script src="./bufferTriangle.js"></script>
+    </body>
+</html>
