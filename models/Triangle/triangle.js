@@ -25,6 +25,7 @@ const initCanvas = () => {
         !gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)
     ) {
         console.log("Error Compiling Shader");
+        return;
     }
 
     // Create a program and attach the shader
@@ -36,6 +37,7 @@ const initCanvas = () => {
     gl.linkProgram(program);
     if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
         console.log("Error Linking Program");
+        return;
     }
 
     // Define Triangle Vertices
