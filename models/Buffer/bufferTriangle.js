@@ -22,8 +22,8 @@ function main() {
     ]);
 
     // Find attributes in GLSL to contain vertex data from buffer
-    var positionLocation = gl.getAttribLocation(program, "position");
-    var colorLocation = gl.getAttribLocation(program, "color");
+    var positionLocation = gl.getAttribLocation(program, "a_position");
+    var colorLocation = gl.getAttribLocation(program, "a_color");
     // Find uniform attribute in GLSL to contain uniform transformation matrix
     var matrixLocation = gl.getUniformLocation(program, "u_matrix");
 
