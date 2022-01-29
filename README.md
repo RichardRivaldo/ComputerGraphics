@@ -15,6 +15,10 @@ Computer Graphics with WebGL
 -   Initiate a local server, for example with Python by executing `python -m http.server` in the root directory.
 -   Go to browser and head to `localhost:<port>/model/<model_directory>` with correct port and model directory.
 
+### Video
+
+-   Access the video [here](https://youtu.be/zF29hH34P04)!
+
 ### Developer
 
 -   Richard Rivaldo / 13519185
