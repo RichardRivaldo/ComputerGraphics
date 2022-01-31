@@ -8,6 +8,7 @@ Computer Graphics with WebGL
 -   `Color Buffer Varying Triangle`, a rectangle made of pair of triangles based on `WebGL How It Works` tutorial.
 -   `Texture and Image Processing`, an appliance of texture images based on `WebGL Image Processing` tutorial.
 -   `Boxie and Pyra`, see my past projects [here](https://github.com/RichardRivaldo/AI_CG)!
+-   `Translating`, `Rotating`, and `Scaling` the `F` alphabet.
 
 ### Guide
 
