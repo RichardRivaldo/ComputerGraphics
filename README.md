@@ -19,6 +19,7 @@ Computer Graphics with WebGL
 ### Video
 
 -   Access the video [here](https://youtu.be/zF29hH34P04)!
+-   Access the second video [here](https://youtu.be/jKxrFzcvZ_E)!
 
 ### Developer
 
